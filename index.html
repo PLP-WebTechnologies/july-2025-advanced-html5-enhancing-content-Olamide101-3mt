@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Page </title>
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+    <header>
+        <h1>My Enhanced HTML5 Web Page</h1>
+        <p>Demonstrating lists, tables, media embedding, and an accessible HTML5 form with native validation.</p>
+        <hr>
+    </header>
+
+    <!-- LISTS SECTION -->
+    <section>
+        <h2>Programming Languages I Want to Learn</h2>
+        <ul>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>HTML & CSS</li>
+            <li>Java</li>
+        </ul>
+
+        <h2>Daily Study Routine</h2>
+        <ol>
+            <li>Review yesterday’s notes</li>
+            <li>Complete coding exercises</li>
+            <li>Watch tutorial videos</li>
+            <li>Work on projects</li>
+        </ol>
+    </section>
+
+    <hr>
+
+    <!-- TABLE SECTION -->
+    <section>
+        <h2>Weekly Study Schedule</h2>
+        <table border="1" cellpadding="8">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Subject</th>
+                    <th>Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>Python</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>JavaScript</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>HTML & CSS</td>
+                    <td>1.5</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- MEDIA SECTION -->
+    <section>
+        <h2>Embedded Media</h2>
+        <figure>
+            <img src="Screenshot (42).png" alt="Portfolio" width="300">
+            <figcaption>Sample Image</figcaption>
+        </figure>
+
+        <audio controls>
+            <source src="sample-audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <video width="320" height="240" controls>
+            <source src="sample-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <hr>
+
+    <!-- FORM SECTION -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+
+            <!-- Personal Information -->
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required autocomplete="email"><br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="08012345678" pattern="[0-9]{11}" required><br><br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required><br><br>
+            </fieldset>
+            <br>
+
+            <!-- Account Information -->
+            <fieldset>
+                <legend>Account Information</legend>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Your Username" required minlength="5"><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required minlength="8"><br><br>
+
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required minlength="8"><br><br>
+            </fieldset>
+            <br>
+
+            <!-- Preferences -->
+            <fieldset>
+                <legend>Preferences</legend>
+
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">--Select Country--</option>
+                    <option value="ng">Nigeria</option>
+                    <option value="kenya">Kenya</option>
+                    <option value="sa">South Africa</option>
+                </select><br><br>
+
+                <label>Subscribe to Newsletter:</label>
+                <input type="radio" name="newsletter" value="yes" required> Yes
+                <input type="radio" name="newsletter" value="no"> No<br><br>
+
+                <label for="bio">Short Bio:</label><br>
+                <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Tell us about yourself..." required></textarea>
+            </fieldset>
+            <br>
+
+            <input type="submit" value="Submit Form">
+            <input type="reset" value="Reset">
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 My Web Development Assignment</p>
+    </footer>
+
+</body>
+</html>
